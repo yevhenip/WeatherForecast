@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast.Api", "WeatherForecast.Api\WeatherForecast.Api.csproj", "{4B767370-9E68-4507-9A32-F05C1CA80930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast.UseCases", "WeatherForecast.UseCases\WeatherForecast.UseCases.csproj", "{57D8DC3B-97B6-46A9-926F-DFC2FB69AAEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast.Exceptions", "WeatherForecast.Exceptions\WeatherForecast.Exceptions.csproj", "{F8004361-C0A1-4F9A-91B6-ECA6644BCE2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast.Core", "WeatherForecast.Core\WeatherForecast.Core.csproj", "{8164DEF4-D5B2-4874-8943-EDC24365FC9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B767370-9E68-4507-9A32-F05C1CA80930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B767370-9E68-4507-9A32-F05C1CA80930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B767370-9E68-4507-9A32-F05C1CA80930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B767370-9E68-4507-9A32-F05C1CA80930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57D8DC3B-97B6-46A9-926F-DFC2FB69AAEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D8DC3B-97B6-46A9-926F-DFC2FB69AAEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D8DC3B-97B6-46A9-926F-DFC2FB69AAEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D8DC3B-97B6-46A9-926F-DFC2FB69AAEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8004361-C0A1-4F9A-91B6-ECA6644BCE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8004361-C0A1-4F9A-91B6-ECA6644BCE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8004361-C0A1-4F9A-91B6-ECA6644BCE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8004361-C0A1-4F9A-91B6-ECA6644BCE2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8164DEF4-D5B2-4874-8943-EDC24365FC9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8164DEF4-D5B2-4874-8943-EDC24365FC9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8164DEF4-D5B2-4874-8943-EDC24365FC9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8164DEF4-D5B2-4874-8943-EDC24365FC9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
