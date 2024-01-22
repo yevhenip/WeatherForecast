@@ -23,7 +23,7 @@ public class GetRainfallReadingsQueryHandler(HttpClient client, IMapper mapper)
         var readings =
             await JsonSerializer.DeserializeAsync<JsonReadings>(result, cancellationToken: cancellationToken);
 
-        if (readings is null)
+        if (readings is null || !readings.Items.Any())
             throw new EntityNotFoundException("Station", request.StationId);
 
         return mapper.Map<IEnumerable<RainfallReadings>>(readings.Items);
