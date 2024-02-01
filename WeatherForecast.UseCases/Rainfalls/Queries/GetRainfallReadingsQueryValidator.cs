@@ -7,6 +7,5 @@ public class GetRainfallReadingsQueryValidator : AbstractValidator<GetRainfallRe
     public GetRainfallReadingsQueryValidator()
     {
         RuleFor(r => r.Count).InclusiveBetween(1, 100);
-        RuleFor(r => r.StationId).InclusiveBetween(1, 100);
     }
 }

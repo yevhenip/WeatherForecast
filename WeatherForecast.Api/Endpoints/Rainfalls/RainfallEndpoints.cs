@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using WeatherForecast.Api.Endpoints.Responses;
+using WeatherForecast.Api.Endpoints.Rainfalls.Responses;
 using WeatherForecast.UseCases.Rainfalls.Queries;
 
 namespace WeatherForecast.Api.Endpoints.Rainfalls;
@@ -14,7 +14,7 @@ public static class RainfallEndpoints
             .MapGroup("/rainfall")
             .WithTags("Rainfall");
 
-        rainfallGroup.MapGet("/id/{stationId:min(1):max(100)}/readings", GetReadings)
+        rainfallGroup.MapGet("/id/{stationId:min(1)}/readings", GetReadings)
             .WithDescription("Retrieve the latest readings for the specified stationId");
 
         return route;

@@ -1,6 +1,6 @@
 ﻿using WeatherForecast.Core.Models;
 
-namespace WeatherForecast.Api.Endpoints.Responses;
+namespace WeatherForecast.Api.Endpoints.Rainfalls.Responses;
 
 public class GetRainfallReadingsResponse
 {

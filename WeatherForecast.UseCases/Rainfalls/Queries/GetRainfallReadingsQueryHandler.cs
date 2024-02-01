@@ -1,4 +1,4 @@
-﻿using System.Text.Json;
+﻿using System.Net.Http.Json;
 using System.Text.Json.Serialization;
 using MapsterMapper;
 using MediatR;
@@ -15,13 +15,7 @@ public class GetRainfallReadingsQueryHandler(HttpClient client, IMapper mapper)
     {
         var url =
             $"http://environment.data.gov.uk/flood-monitoring/id/stations/{request.StationId}/readings?_limit={request.Count}";
-        var response = await client.GetAsync(url, cancellationToken);
-        if (!response.IsSuccessStatusCode)
-            throw new HttpClientException();
-
-        var result = await response.Content.ReadAsStreamAsync(cancellationToken);
-        var readings =
-            await JsonSerializer.DeserializeAsync<JsonReadings>(result, cancellationToken: cancellationToken);
+        var readings = (JsonReadings)(await client.GetFromJsonAsync(url, typeof(JsonReadings), cancellationToken))!;
 
         if (readings is null || !readings.Items.Any())
             throw new EntityNotFoundException("Station", request.StationId);
